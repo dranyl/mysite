@@ -11,13 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
-@import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
-@import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+@import url('https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css');
+@import url('https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css');
+/* @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap');
 
 .cursive {
-  font-family: "Amatic SC", cursive;
-  font-weight: 700;
+  font-family: 'Dosis', cursive;
+  font-weight: 400;
 }
 
 .prose img {
