@@ -11,7 +11,7 @@ export default function Home() {
       />
       <section className='relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8'>
         <h1 className='text-6xl text-green-300 font-bold cursive leading-none lg:leading-snug home-name'>
-          Hello, I'm Dranyl
+          Hello, I'm Dranyl.
         </h1>
       </section>
     </main>

@@ -72,3 +72,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### custom add-ons
 
 npm install react-social-icons
+
+#to install image url from sanity
+npm install @sanity/image-url
+
+#to install sanity block content
+npm install @sanity/block-content-to-react
