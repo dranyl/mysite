@@ -22,17 +22,19 @@ export default function Project() {
   }, []);
 
   return (
-    <main className='bg-green-100 min-h-screen p-12'>
+    <main className='bg-gray-800 min-h-screen p-6'>
       <section className='container mx-auto'>
-        <h1 className='text-5xl flex justify-center cursive'>My projects</h1>
-        <h2 className='text-lg text-gray-600 flex justify-center mb-12'>
+        <h1 className='text-5xl text-green-400 flex justify-center cursive mb-6'>
+          Portfolio
+        </h1>
+        {/* <h2 className='text-lg text-gray-600 flex justify-center mb-12'>
           Welcome to my projects page!
-        </h2>
+        </h2> */}
 
         <section className='grid grid-cols-2 gap-8'>
           {projectData &&
             projectData.map((project, index) => (
-              <article className='relative rounded-lg shadow-xl bg-white p-16'>
+              <article className='relative rounded-lg shadow-xl bg-gray-500 p-4'>
                 <h3 className='text-gray-800 text-3xl font-bold mb-2 hover:text-red-700'>
                   {project.title}
                 </h3>

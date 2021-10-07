@@ -4,63 +4,43 @@ import { SocialIcon } from 'react-social-icons';
 
 export default function NavBar() {
   return (
-    <header className='bg-green-600'>
-      <div className='container mx-auto flex justify-between'>
-        <nav className='flex'>
+    <nav className='relative flex flex-wrap items-center justify-between px-2 py-1 bg-gray-900'>
+      <div className='container px-4 mx-auto flex flex-wrap items-center justify-between'>
+        <div className='w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start'>
           <NavLink
             to='/'
             exact
-            activeClassName='text-white'
-            className='inflex-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-800 text-4xl font-bold cursive tracking-widest'
+            className='text-2xl font-medium leading-relaxed inline-block mr-4 py-2 whitespace-nowrap cursive text-green-500 tracking-widest'
           >
-            Dranyl
+            dranyl
           </NavLink>
-          <NavLink
-            to='/post'
-            className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800'
-            activeClassName='text-red-100 bg-green-700'
-          >
-            Blog Posts
-          </NavLink>
-          <NavLink
-            to='/project'
-            className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800'
-            activeClassName='text-red-100 bg-green-700'
-          >
-            Projects
-          </NavLink>
-          <NavLink
-            to='/about'
-            className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800'
-            activeClassName='text-red-100 bg-green-700'
-          >
-            About Me!
-          </NavLink>
-        </nav>
-        <div className='inline-flex py-3 px-3 my-6'>
-          <SocialIcon
-            url='https://twitter.com/dranyl_105'
-            className='mr-4'
-            target='_blank'
-            fgColor='#fff'
-            style={{ height: 35, width: 35 }}
-          />
-          <SocialIcon
-            url='https://linkedin.com/in/lynardsalingujay'
-            className='mr-4'
-            target='_blank'
-            fgColor='#fff'
-            style={{ height: 35, width: 35 }}
-          />
-          <SocialIcon
-            url='https://www.youtube.com/channel/UCVHyKLw6m_3NidEK7-ScuIw'
-            className='mr-4'
-            target='_blank'
-            fgColor='#fff'
-            style={{ height: 35, width: 35 }}
-          />
+        </div>
+        <div
+          className='lg:flex flex-grow items-center'
+          id='example-navbar-warning'
+        >
+          <ul className='flex flex-col lg:flex-row list-none ml-auto'>
+            <li className='nav-item'>
+              <NavLink
+                activeClassName='text-green-400'
+                className='px-3 py-2 flex items-center text-md font-bold leading-snug text-green-800 hover:opacity-75 cursive'
+                to='/project'
+              >
+                Portfolio
+              </NavLink>
+            </li>
+            <li className='nav-item'>
+              <NavLink
+                activeClassName='text-green-400'
+                className='px-3 py-2 flex items-center text-md font-bold leading-snug text-green-800 hover:opacity-75 cursive'
+                to='/about'
+              >
+                About
+              </NavLink>
+            </li>
+          </ul>
         </div>
       </div>
-    </header>
+    </nav>
   );
 }

@@ -18,7 +18,7 @@ code {
 
 .cursive {
   font-family: 'Dosis', cursive;
-  font-weight: 400;
+  /* font-weight: 400; */
 }
 
 .prose img {
@@ -28,5 +28,11 @@ code {
 }
 
 .home-name {
-  font-size: 150px;
+  font-size: 80px;
+}
+
+.bg-image-custom {
+  background-image: url('./images/pexels-ricardo-ortiz-9752183.jpg');
+  width: 100%;
+  height: 100%;
 }

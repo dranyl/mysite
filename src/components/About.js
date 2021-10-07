@@ -28,14 +28,9 @@ export default function About() {
   if (!author) return <div>Loading...</div>;
 
   return (
-    <main className='relative'>
-      <img
-        src={biobackground}
-        alt='cybersecurity'
-        className='absolute w-full'
-      />
+    <main className='relative bg-gray-800'>
       <div className='p-10 lg:pt-48 container mx-auto relative'>
-        <section className='bg-green-800 rounded-lg shadow-2xl lg:flex p-20'>
+        <section className='bg-green-800 rounded-lg shadow-2xl lg:flex p-10'>
           <img
             src={urlFor(author.authorImage).url()}
             alt={author.name}
