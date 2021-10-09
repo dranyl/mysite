@@ -25,7 +25,7 @@ export default function Project() {
     <main className='bg-gray-800 min-h-screen p-6'>
       <section className='container mx-auto'>
         <h1 className='text-5xl text-green-400 flex justify-center cursive mb-6'>
-          Portfolio
+          Projects
         </h1>
         {/* <h2 className='text-lg text-gray-600 flex justify-center mb-12'>
           Welcome to my projects page!

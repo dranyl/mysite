@@ -25,7 +25,7 @@ export default function NavBar() {
                 className='px-3 py-2 flex items-center text-md font-bold leading-snug text-green-800 hover:opacity-75 cursive'
                 to='/project'
               >
-                Portfolio
+                Projects
               </NavLink>
             </li>
             <li className='nav-item'>
